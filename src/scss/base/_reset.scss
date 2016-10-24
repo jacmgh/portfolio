@@ -1,0 +1,26 @@
+/* =============================================================================
+ * CSS reset
+ * ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}

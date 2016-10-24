@@ -1,0 +1,31 @@
+/* =============================================================================
+ * Base
+ * ========================================================================== */
+
+body {
+  @include font-size($font-size-md);
+  margin-top: $navbar-height;
+  background: $grey-darkest;
+  color: $grey-light;
+  font-family: $font-family-base;
+  text-align: center;
+}
+
+a {
+  color: $grey-light;
+  text-decoration: none;
+  transition: $transition-duration;
+  &:hover {
+    color: #fff;
+  }
+}
+
+h2 {
+  @include font-size($font-size-xl);
+  margin-bottom: 0.5em;
+  font-family: $font-family-alt;
+}
+
+img {
+  max-width: 100%;
+}

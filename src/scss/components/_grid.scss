@@ -1,0 +1,64 @@
+/* =============================================================================
+ * Grid system
+ * ========================================================================== */
+
+$padding-grid: 1em;
+
+.grid-row {
+  max-width: $max-width;
+  margin: 0 auto;
+  &-padding {
+    padding: $padding-grid;
+  }
+}
+
+/* =============================================================================
+ * Clearfix
+ * ========================================================================== */
+
+.grid-row:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+
+/* =============================================================================
+ * Column
+ * ========================================================================== */
+
+[class^='grid-sm'], [class^='grid-md'], [class^='grid-lg'] {
+  float: left;
+  width: 100%;
+  min-height: 1px; // Empty column fix
+  padding: $padding-grid;
+}
+
+/* =============================================================================
+ * Columns
+ * ========================================================================== */
+
+@mixin grid($screen) {
+  @for $i from 1 through 12 {
+    .grid-#{$screen}-#{$i} {
+      width: $i / 12 * 100%;
+    }
+  }
+}
+
+// Small screen (mobile)
+.grid-sm-0 { display: none; }
+@include grid(sm);
+
+// Medium screen (tablet)
+@include screen-md {
+  .grid-sm-0 { display: block; }
+  .grid-md-0 { display: none; }
+  @include grid(md);
+}
+
+// Large screen (desktop)
+@include screen-lg {
+  .grid-md-0 { display: block; }
+  .grid-lg-0 { display: none; }
+  @include grid(lg);
+}

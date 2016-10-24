@@ -1,0 +1,17 @@
+/* =============================================================================
+ * Buttons
+ * ========================================================================== */
+
+.btn {
+  display: inline-block;
+  margin: 0 0.25em 0.1em;
+  padding: 0.5em 1em;
+  border-radius: $border-radius;
+  background: hsla(0, 0%, 100%, 0.05);
+  white-space: nowrap;
+  transition: $transition-duration;
+  &:hover {
+    border-color: $grey-dark;
+    background: hsla(0, 0%, 100%, 0.1);
+  }
+}

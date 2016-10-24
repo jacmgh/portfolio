@@ -1,0 +1,23 @@
+/* =============================================================================
+ * Navbar
+ * ========================================================================== */
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $navbar-height;
+  overflow: hidden;
+  border-bottom: 1px solid $grey-darker;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: $navbar-height;
+  li {
+    display: inline;
+  }
+  a {
+    padding: 0.5em;
+  }
+}

@@ -1,0 +1,24 @@
+/* =============================================================================
+ * Global mixins
+ * ========================================================================== */
+
+// Media queries
+
+@mixin screen-md {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+// Font-size rem support
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: #{$size / 16px}rem;
+}

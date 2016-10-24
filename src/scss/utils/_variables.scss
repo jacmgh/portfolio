@@ -1,0 +1,42 @@
+/* =============================================================================
+ * Global variables
+ * ========================================================================== */
+
+// Color pallete
+$grey-darkest: #111;
+$grey-darker: #222;
+$grey-dark: #444;
+$grey: #777;
+$grey-light: #aaa;
+$grey-lighter: #ddd;
+
+// Font sizes (3-6)
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 48px;
+
+/* =============================================================================
+ * Theme settings
+ * ========================================================================== */
+
+// Media queries breakpoints
+$breakpoint-md: 40em; // Medium - tablet
+$breakpoint-lg: 60em; // Large - desktop
+$max-width: 60em; // Max page width
+
+// Brand colors
+$color-brand: #cad;
+$color-brand-alt: #3ad;
+
+// Fonts
+$font-family-base: 'Scada', Arial, Helvetica, sans-serif;
+$font-family-alt: 'Niconne', Arial, Helvetica, sans-serif;
+
+// Borders
+$border-radius: 1em;
+
+// Transition
+$transition-duration: 0.2s;
+
+// Navbar
+$navbar-height: 3em;

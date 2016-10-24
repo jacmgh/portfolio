@@ -1,0 +1,36 @@
+/* =============================================================================
+ * Intro
+ * ========================================================================== */
+
+.intro-name {
+  display: inline-block;
+  margin: 0 auto 2em;
+  padding: 0.5em 2em;
+  border-radius: $border-radius;
+  background: $grey-darker;
+}
+
+$font-size-heading: 17vw;
+
+.intro-heading {
+  @include font-size(50px);
+  font-size: $font-size-heading;
+  color: $color-brand;
+  font-family: $font-family-alt;
+  @include screen-md {
+    @include font-size(100px);
+    font-size: $font-size-heading;
+  }
+  @include screen-lg {
+    @include font-size(150px);
+  }
+  small {
+    display: block;
+    color: #fff;
+    font-size: 0.5em;
+  }
+}
+
+.intro-location {
+  margin-top: 2em;
+}

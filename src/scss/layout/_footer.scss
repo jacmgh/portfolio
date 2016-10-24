@@ -1,0 +1,18 @@
+/* =============================================================================
+ * Footer
+ * ========================================================================== */
+
+.footer-contact .btn {
+  margin-bottom: 1em;
+}
+
+.footer-copy {
+  margin-top: 2em;
+  color: $grey;
+}
+
+.footer-name {
+  @include font-size($font-size-lg);
+  padding: 0 0.25em;
+  font-family: $font-family-alt;
+}

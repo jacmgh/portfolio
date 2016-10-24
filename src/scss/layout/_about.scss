@@ -1,0 +1,23 @@
+/* =============================================================================
+ * About
+ * ========================================================================== */
+
+.about-img {
+  max-width: 8em;
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
+.about-text {
+  @include font-size($font-size-md);
+  color: $grey-lighter;
+  line-height: 1.35;
+  text-align: left;
+  em {
+    color: $color-brand;
+  }
+  @include screen-lg {
+    @include font-size($font-size-lg);
+    text-align: justify;
+  }
+}
